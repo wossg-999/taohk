@@ -1,110 +1,126 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>小陶的个人网页</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f8f8f8;
-        color: #333;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hongkang Tao</title>
+  <meta name="description" content="A simple, whitespace theme for academics. Based on al-folio design.">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/">
+  <style>
+    /* 新增 CSS 样式 */
+    .page-content {
+      display: block;
+      margin: 0 auto; /* 内容在页面宽度上居中 */
+      max-width: 800px; /* 设置内容的最大宽度 */
+      padding: 20px; /* 添加内边距 */
+      text-align: left; /* 保持文本左对齐 */
     }
-    header {
-        background-color: #4CAF50;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
+
+    .footer {
+      position: fixed; /* 固定到页面底部 */
+      bottom: 0;
+      width: 100%; /* 占据全宽 */
+      background-color: #f5f5f5; /* 浅灰色背景 */
+      text-align: center; /* 文本居中 */
+      padding: 10px 0; /* 添加上下内边距 */
+      font-size: 14px; /* 设置字体大小 */
+      color: #424242; /* 字体颜色 */
     }
-    nav {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
+
+    .footer a {
+      color: #00369f; /* 链接颜色 */
+      text-decoration: none; /* 去掉下划线 */
     }
-    nav a {
-        color: #fff;
-        padding: 14px 20px;
-        text-decoration: none;
+
+    .footer a:hover {
+      text-decoration: underline; /* 鼠标悬停时显示下划线 */
     }
-    nav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    main {
-        padding: 20px;
-    }
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    .news, .projects {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-        border-bottom: 2px solid #4CAF50;
-    }
-</style>
+  </style>
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484V0C0,0.665,0.665,0,1.484,0h15.031C17.335,0,18,0.665,18,1.484z" />
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516V6.031c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,6.031,18,6.696,18,7.516z" />
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516v-1.484c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516z" />
+            </svg>
+          </span>
+        </label>
+      </nav>
+    </div>
+  </header>
 
-<header>
-    <h1>陶洪康</h1>
-    <p>南昌大学 先进制造学院</p>
-</header>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="post">
+        <header class="post-header">
+          <h1 class="post-title">Hongkang <strong>Tao</strong></h1>
+          <h5 class="post-description">School of Advanced Manufacturing, Nanchang University, Nanchang, China</h5>
+        </header>
 
-<nav>
-    <a href="#about">关于我</a>
-    <a href="#research">研究领域</a>
-    <a href="#news">论文</a>
-    <a href="#projects">项目</a>
-    <a href="#contact">联系我</a>
-</nav>
+        <article class="post-content clearfix">
+          <div class="profile col profile_img right">
+            <img class="one" src="/assets/img/prof_pic.png" alt="Profile Picture">
+          </div>
 
-<main>
-    <section id="about">
-        <h2>关于我</h2>
-        <p>我在于2022年入学南昌大学。</p>
-        <p>我的研究重点是使用人工智能、计算机视觉构建机器人自主导航系统。</p>
-    </section>
+          <p>I enrolled in Nanchang University in 2022.</p>
+          <p>My research focuses on developing autonomous navigation systems for robots by utilizing artificial intelligence and computer vision.</p>
+          <p>I specialize in computer vision, with research interests spanning multiple areas, including defect detection, intelligent inspection, and autonomous driving for off-road vehicles.</p>
 
-    <section id="research">
-        <h2>研究领域</h2>
-        <p>我专注于计算机视觉，研究方向涵盖多个领域，如缺陷检测、智能巡检以及越野车无人驾驶。</p>
-    </section>
+          <p>Email: <a href="mailto:taohk@ieee.org">taohk@ieee.org</a><br />
+            Address: 999 Xuefu Avenue, Nanchang, Jiangxi, China</p>
 
-    <section id="news" class="news">
-        <h2>论文</h2>
-        <ul>
-            <!-- 添加更多论文 -->
-        </ul>
-    </section>
+          <div class="news">
+            <h3>News</h3>
+            <table>
+              <tr>
+                <td class="date">Apr 5, 2024</td>
+                <td class="announcement">...</td>
+              </tr>
+            </table>
+          </div>
 
-    <section id="projects" class="projects">
-        <h2>项目</h2>
-        <ul>
-            <!-- 添加更多项目 -->
-        </ul>
-    </section>
+          <div class="projects">
+            <h3>Projects</h3>
+            <div class="img_row">
+              <img class="col one left" src="/assets/img/ijcvyin2024.png" alt="Project Image">
+              <div class="col two left">
+                <strong><font color="#00369f">A Survey on, 2024<br />
+                  [<a href="https://arxiv.org/abs/">Paper</a>]</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
 
-    <section id="contact">
-        <h2>联系我</h2>
-        <p>邮箱: taohk@ieee.org</p>
-    </section>
-</main>
+  <footer class="footer">
+    &copy; Copyright 2024 Hongkang Tao. Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  </footer>
 
-<footer>
-    <p>&copy; 2024 小陶的个人网页</p>
-</footer>
+  <!-- Load jQuery -->
+  <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/assets/js/common.js"></script>
+
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+  <script src="/assets/js/katex.js"></script>
+
+  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
 </body>
+
 </html>
