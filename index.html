@@ -1,25 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>小陶的个人网页</title>
 <style>
-/* 在这里添加CSS样式 */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+    }
+    header {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    main {
+        padding: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .news, .projects {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        border-bottom: 2px solid #4CAF50;
+    }
 </style>
 </head>
 <body>
+
 <header>
-<!-- 在这里添加页眉内容 -->
+    <h1>小陶</h1>
+    <p>浙江大学 控制科学与工程系</p>
 </header>
+
 <nav>
-<!-- 在这里添加导航菜单 -->
+    <a href="#about">关于我</a>
+    <a href="#research">研究领域</a>
+    <a href="#news">新闻</a>
+    <a href="#projects">项目</a>
+    <a href="#contact">联系我</a>
 </nav>
+
 <main>
-<!-- 在这里添加主要内容 -->
-小陶的个人网页
+    <section id="about">
+        <h2>关于我</h2>
+        <p>我在浙江大学控制科学与工程系担任教授。我在2016年获得博士学位，研究期间，我曾在悉尼科技大学和斯坦福大学进行交流研究。</p>
+        <p>我的研究重点是使用人工智能、机器学习和计算机视觉构建机器人自主导航系统。我们的团队开发了许多机器人系统，例如越野机器人导航系统、最后一公里包裹配送机器人和基于视觉的工业机器人控制器，一些系统已经应用于工业。</p>
+        <p>请访问我们的<a href="#">YouTube频道</a>和<a href="#">哔哩哔哩频道</a>观看视频。</p>
+    </section>
+
+    <section id="research">
+        <h2>研究领域</h2>
+        <p>我专注于建立机器人领域的持续自主性，研究涉及多个方向。</p>
+    </section>
+
+    <section id="news" class="news">
+        <h2>新闻</h2>
+        <ul>
+            <li>2024年4月5日：我们在ICRA 2024中荣获机器人视觉最佳论文奖提名 - 祝贺云轩！</li>
+            <li>2024年4月3日：我们的TVCG论文被接受 - 祝贺浩东。</li>
+            <li>2024年3月6日：我们的TASE论文被接受 - 祝贺艳梅。</li>
+            <li>2024年3月4日：梁和彤成功答辩，祝贺博士谢和博士杨！</li>
+            <li>2024年2月27日：两个CVPR论文被接受 - 祝贺浩东和宏宇。</li>
+            <li>2024年2月1日：我们的IJRR论文被接受 - 祝贺露。</li>
+            <!-- 添加更多新闻 -->
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>项目</h2>
+        <ul>
+            <li>A Survey on Global LiDAR Localization: Challenges, Advances and Open Problems [论文]</li>
+            <li>Compliance while resisting: A shear-thickening fluid controller for physical human-robot interaction [论文]</li>
+            <li>AI co-pilot bronchoscope robot [论文]</li>
+            <li>DPCN++: Differentiable Phase Correlation Network for Versatile Pose Registration [论文]</li>
+            <!-- 添加更多项目 -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>邮箱: ywang24 [at] zju [dot] edu [dot] cn</p>
+        <p>地址: 浙江省杭州市西湖区浙大路38号, 玉泉校区18号楼211.</p>
+    </section>
 </main>
+
 <footer>
-<!-- 在这里添加页脚内容 -->
+    <p>&copy; 2024 小陶的个人网页</p>
 </footer>
 </body>
 </html>
